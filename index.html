@@ -1,15 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#080a0d">
-<meta name="description" content="ZAARA - Evolve Yourself. A futuristic fitness and wellness experience.">
-<title>ZAARA | Evolve Yourself</title>
+<meta name="description" content="VIDLYRA Download Center - ZAARA and VIDLYRA CHAT Android apps.">
+<title>VIDLYRA | Download Center</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <style>
@@ -17,67 +15,50 @@
   --orange:#ff8a00;
   --black:#080a0d;
   --card:#11151b;
-  --white:#ffffff;
+  --white:#fff;
   --muted:#9299a4;
 }
 
-* {
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
+* {margin:0;padding:0;box-sizing:border-box}
 html {scroll-behavior:smooth}
-
 body {
   background:var(--black);
   color:var(--white);
   font-family:Inter,Arial,sans-serif;
   overflow-x:hidden;
 }
-
 a {text-decoration:none;color:inherit}
 button {font-family:inherit;cursor:pointer}
 
-/* NAVIGATION */
-
 nav {
   position:fixed;
-  top:0;
-  left:0;
-  width:100%;
+  top:0;left:0;width:100%;
   z-index:100;
   padding:19px 8%;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  background:#080a0deF;
+  background:#080a0def;
   backdrop-filter:blur(18px);
   border-bottom:1px solid #ffffff12;
 }
-
 .logo {
-  font-size:28px;
+  font-size:27px;
   font-weight:900;
   letter-spacing:4px;
 }
-
 .logo span {color:var(--orange)}
-
 .navlinks {
   display:flex;
-  gap:25px;
+  gap:22px;
   align-items:center;
 }
-
 .navlinks a {
   font-size:13px;
   color:#c5c8cd;
   transition:.3s;
 }
-
 .navlinks a:hover {color:var(--orange)}
-
 .menu {
   display:none;
   background:none;
@@ -85,8 +66,6 @@ nav {
   border:0;
   font-size:27px;
 }
-
-/* BUTTONS */
 
 .btn {
   display:inline-block;
@@ -98,13 +77,12 @@ nav {
   border:0;
   transition:.3s;
   cursor:pointer;
+  text-align:center;
 }
-
 .btn:hover {
   transform:translateY(-3px);
   box-shadow:0 8px 30px #ff8a0050;
 }
-
 .btn-outline {
   display:inline-block;
   border:1px solid #ffffff55;
@@ -113,16 +91,13 @@ nav {
   font-weight:700;
   transition:.3s;
 }
-
 .btn-outline:hover {
   border-color:var(--orange);
   color:var(--orange);
 }
 
-/* HERO */
-
 .hero {
-  min-height:100vh;
+  min-height:90vh;
   display:flex;
   align-items:center;
   padding:150px 8% 80px;
@@ -130,9 +105,7 @@ nav {
     linear-gradient(90deg,#080a0d 5%,#080a0dbb 55%,#080a0d35),
     url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1800') center/cover;
 }
-
 .hero-content {max-width:720px}
-
 .tag {
   color:var(--orange);
   font-size:12px;
@@ -140,30 +113,24 @@ nav {
   letter-spacing:4px;
   margin-bottom:23px;
 }
-
 .hero h1 {
   font-size:clamp(55px,9vw,110px);
   font-weight:900;
   line-height:.95;
   letter-spacing:-5px;
 }
-
 .hero h1 span {color:var(--orange)}
-
 .hero p {
   color:#c2c6cd;
   max-width:480px;
   line-height:1.8;
   margin:28px 0;
 }
-
 .hero-buttons {
   display:flex;
   gap:15px;
   flex-wrap:wrap;
 }
-
-/* STATS */
 
 .stats {
   display:grid;
@@ -172,48 +139,30 @@ nav {
   background:#10141a;
   text-align:center;
 }
-
-.stat h2 {
-  font-size:32px;
-  color:var(--orange);
-}
-
-.stat p {
-  font-size:12px;
-  color:var(--muted);
-  margin-top:8px;
-}
-
-/* GENERAL SECTIONS */
+.stat h2 {font-size:32px;color:var(--orange)}
+.stat p {font-size:12px;color:var(--muted);margin-top:8px}
 
 section {padding:100px 8%}
-
 .section-head {
   text-align:center;
   margin-bottom:50px;
 }
-
 .section-head .tag {margin-bottom:15px}
-
 .section-head h2 {
   font-size:clamp(29px,5vw,48px);
   font-weight:900;
 }
-
 .section-head p {
   color:var(--muted);
   margin-top:15px;
   line-height:1.7;
 }
 
-/* FEATURES */
-
-.features {
+.features,.workouts,.avatars {
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:20px;
 }
-
 .feature {
   background:var(--card);
   border:1px solid #ffffff10;
@@ -221,34 +170,16 @@ section {padding:100px 8%}
   border-radius:12px;
   transition:.3s;
 }
-
 .feature:hover {
   transform:translateY(-7px);
   border-color:var(--orange);
 }
-
-.feature .icon {
-  font-size:35px;
-  margin-bottom:22px;
-}
-
-.feature h3 {
-  font-size:20px;
-  margin-bottom:12px;
-}
-
+.feature .icon {font-size:35px;margin-bottom:22px}
+.feature h3 {font-size:20px;margin-bottom:12px}
 .feature p {
   color:var(--muted);
   font-size:14px;
   line-height:1.8;
-}
-
-/* WORKOUTS */
-
-.workouts {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
 }
 
 .workout {
@@ -258,7 +189,6 @@ section {padding:100px 8%}
   border-radius:12px;
   background:#15191f;
 }
-
 .workout img {
   width:100%;
   height:100%;
@@ -266,12 +196,7 @@ section {padding:100px 8%}
   opacity:.7;
   transition:.4s;
 }
-
-.workout:hover img {
-  transform:scale(1.08);
-  opacity:.95;
-}
-
+.workout:hover img {transform:scale(1.08);opacity:.95}
 .workout-info {
   position:absolute;
   bottom:0;
@@ -279,22 +204,8 @@ section {padding:100px 8%}
   padding:30px;
   background:linear-gradient(transparent,#080a0d);
 }
-
 .workout-info h3 {font-size:23px}
-
-.workout-info p {
-  color:#d0d0d0;
-  font-size:13px;
-  margin-top:8px;
-}
-
-/* AVATARS */
-
-.avatars {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-}
+.workout-info p {color:#d0d0d0;font-size:13px;margin-top:8px}
 
 .avatar {
   background:var(--card);
@@ -304,34 +215,17 @@ section {padding:100px 8%}
   border:1px solid #ffffff10;
   transition:.3s;
 }
-
 .avatar:hover {border-color:var(--orange)}
-
-.avatar .symbol {
-  font-size:65px;
-  margin-bottom:20px;
-}
-
+.avatar .symbol {font-size:65px;margin-bottom:20px}
 .avatar h3 {margin-bottom:10px}
+.avatar p {font-size:13px;color:var(--muted);line-height:1.7}
 
-.avatar p {
-  font-size:13px;
-  color:var(--muted);
-  line-height:1.7;
-}
-
-/* APP SCREENSHOT GALLERY */
-
-#screenshots {
-  background:#0b0e13;
-}
-
+#screenshots {background:#0b0e13}
 .app-gallery {
   display:grid;
   grid-template-columns:repeat(3,minmax(0,1fr));
   gap:28px;
 }
-
 .app-shot {
   background:linear-gradient(145deg,#171c24,#0c0f14);
   border:1px solid #ffffff13;
@@ -341,13 +235,11 @@ section {padding:100px 8%}
   transition:.35s;
   overflow:hidden;
 }
-
 .app-shot:hover {
   transform:translateY(-9px);
   border-color:var(--orange);
   box-shadow:0 15px 40px #ff8a0020;
 }
-
 .phone-frame {
   max-width:270px;
   margin:auto;
@@ -356,10 +248,7 @@ section {padding:100px 8%}
   border:2px solid #353a42;
   border-radius:25px;
   overflow:hidden;
-  position:relative;
-  box-shadow:0 10px 30px #0008;
 }
-
 .phone-frame img {
   width:100%;
   display:block;
@@ -367,27 +256,9 @@ section {padding:100px 8%}
   object-fit:contain;
   cursor:zoom-in;
   background:#11151b;
-  transition:.3s;
 }
-
-.app-shot:hover .phone-frame img {
-  filter:brightness(1.08);
-}
-
-.app-shot h3 {
-  margin-top:18px;
-  color:var(--orange);
-  font-size:15px;
-}
-
-.app-shot p {
-  color:var(--muted);
-  font-size:12px;
-  margin-top:8px;
-  line-height:1.6;
-}
-
-/* IMAGE VIEWER */
+.app-shot h3 {margin-top:18px;color:var(--orange);font-size:15px}
+.app-shot p {color:var(--muted);font-size:12px;margin-top:8px;line-height:1.6}
 
 .image-viewer {
   position:fixed;
@@ -399,9 +270,7 @@ section {padding:100px 8%}
   justify-content:center;
   padding:20px;
 }
-
 .image-viewer.active {display:flex}
-
 .image-viewer img {
   max-width:95%;
   max-height:88vh;
@@ -409,38 +278,54 @@ section {padding:100px 8%}
   border:2px solid var(--orange);
   border-radius:12px;
 }
-
 .viewer-close {
   position:absolute;
-  top:20px;
-  right:25px;
+  top:20px;right:25px;
   font-size:35px;
   color:white;
   background:none;
   border:0;
 }
 
-/* DOWNLOAD */
-
-.download {
-  text-align:center;
-  background:linear-gradient(135deg,#1b1711,#11151b);
-  border:1px solid #ff8a0030;
-  border-radius:18px;
-  padding:75px 25px;
+.download-center-grid {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:22px;
+  max-width:1000px;
+  margin:35px auto 0;
+  text-align:left;
 }
-
-.download h2 {
-  font-size:clamp(32px,5vw,52px);
+.download-card {
+  background:linear-gradient(145deg,#171c24,#0d1117);
+  border:1px solid #ffffff18;
+  border-radius:16px;
+  padding:30px;
+  transition:.3s;
 }
-
-.download p {
+.download-card:hover {
+  transform:translateY(-6px);
+  border-color:var(--orange);
+  box-shadow:0 15px 40px #ff8a0020;
+}
+.app-mark {
+  width:58px;height:58px;
+  border-radius:15px;
+  display:grid;
+  place-items:center;
+  background:#ff8a0018;
+  border:1px solid #ff8a0050;
+  color:var(--orange);
+  font-size:25px;
+  font-weight:900;
+  margin-bottom:20px;
+}
+.download-card h3 {font-size:23px;margin-bottom:9px}
+.download-card p {
   color:var(--muted);
-  margin:20px auto 30px;
-  max-width:500px;
-  line-height:1.8;
+  font-size:13px;
+  line-height:1.7;
+  margin:0 0 18px;
 }
-
 .version-label {
   display:inline-block;
   border:1px solid #ff8a0050;
@@ -453,42 +338,65 @@ section {padding:100px 8%}
   letter-spacing:1px;
   margin-bottom:20px;
 }
+.download-meta {
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-bottom:22px;
+}
+.download-meta span {
+  color:#d4d7dc;
+  background:#ffffff0b;
+  border:1px solid #ffffff12;
+  border-radius:30px;
+  padding:6px 10px;
+  font-size:10px;
+  font-weight:700;
+}
+.download-card .btn {width:100%}
+.download-note {
+  color:var(--muted);
+  font-size:11px;
+  line-height:1.7;
+  text-align:center;
+  margin-top:25px;
+}
 
-/* FOOTER */
+.mission {
+  text-align:center;
+  background:linear-gradient(135deg,#1b1711,#11151b);
+  border:1px solid #ff8a0030;
+  border-radius:18px;
+  padding:75px 25px;
+}
+.mission h2 {font-size:clamp(32px,5vw,52px)}
+.mission p {
+  color:var(--muted);
+  margin:20px auto 30px;
+  max-width:500px;
+  line-height:1.8;
+}
 
 footer {
   padding:55px 8% 25px;
   background:#050608;
   border-top:1px solid #ffffff12;
 }
-
 .footer-top {
   display:flex;
   justify-content:space-between;
   flex-wrap:wrap;
   gap:35px;
 }
-
 .footer-top p {
   color:var(--muted);
   font-size:13px;
   margin-top:15px;
   line-height:1.8;
 }
-
-.footer-links {
-  display:flex;
-  gap:20px;
-  flex-wrap:wrap;
-}
-
-.footer-links a {
-  font-size:13px;
-  color:#bbb;
-}
-
+.footer-links {display:flex;gap:20px;flex-wrap:wrap}
+.footer-links a {font-size:13px;color:#bbb}
 .footer-links a:hover {color:var(--orange)}
-
 .copyright {
   border-top:1px solid #ffffff15;
   margin-top:40px;
@@ -498,147 +406,40 @@ footer {
   text-align:center;
 }
 
-/* REVEAL ANIMATION */
-
 .reveal {
   opacity:0;
   transform:translateY(25px);
   transition:.7s;
 }
-
-.reveal.show {
-  opacity:1;
-  transform:translateY(0);
-}
-
-/* DOWNLOAD CELEBRATION */
-
-.celebration {
-  position:fixed;
-  inset:0;
-  z-index:9998;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  pointer-events:none;
-  opacity:0;
-  visibility:hidden;
-  transition:.3s;
-}
-
-.celebration.active {
-  opacity:1;
-  visibility:visible;
-}
-
-.celebration-content {
-  background:#11151bf2;
-  border:1px solid #ff8a00;
-  border-radius:20px;
-  padding:40px 25px;
-  width:min(90%,430px);
-  text-align:center;
-  box-shadow:0 0 70px #ff8a0035;
-  transform:scale(.7);
-  transition:.4s;
-}
-
-.celebration.active .celebration-content {
-  transform:scale(1);
-}
-
-.celebration-emojis {
-  font-size:43px;
-  animation:bounce 1s infinite;
-}
-
-.celebration-content h2 {
-  color:var(--orange);
-  font-size:27px;
-  margin:20px 0 12px;
-}
-
-.celebration-content p {
-  color:#ddd;
-  line-height:1.7;
-}
-
-.celebration-content .small {
-  color:var(--muted);
-  font-size:12px;
-  margin-top:18px;
-}
-
-.celebration-close {
-  pointer-events:auto;
-  margin-top:22px;
-  border:0;
-  background:var(--orange);
-  padding:12px 25px;
-  border-radius:7px;
-  font-weight:800;
-}
-
-.floating-heart {
-  position:fixed;
-  z-index:9999;
-  pointer-events:none;
-  animation:floatUp 3s ease-out forwards;
-}
-
-@keyframes floatUp {
-  0% {
-    transform:translateY(0) rotate(0);
-    opacity:1;
-  }
-  100% {
-    transform:translateY(-110vh) rotate(360deg);
-    opacity:0;
-  }
-}
-
-@keyframes bounce {
-  50% {transform:scale(1.2)}
-}
-
-/* RESPONSIVE */
+.reveal.show {opacity:1;transform:translateY(0)}
 
 @media(max-width:950px) {
   .navlinks {gap:15px}
   .app-gallery {grid-template-columns:repeat(2,1fr)}
 }
-
 @media(max-width:850px) {
   .navlinks {
     display:none;
     position:absolute;
-    top:75px;
-    left:0;
+    top:75px;left:0;
     width:100%;
     background:#10141a;
     padding:25px;
     flex-direction:column;
     align-items:center;
   }
-
   .navlinks.active {display:flex}
   .menu {display:block}
-
-  .features,.workouts,.avatars {
-    grid-template-columns:1fr;
-  }
-
-  .stats {
-    padding:30px 4%;
-    gap:10px;
-  }
-
+  .features,.workouts,.avatars {grid-template-columns:1fr}
+  .stats {padding:30px 4%;gap:10px}
   .stat h2 {font-size:24px}
   section {padding:75px 6%}
   .hero {padding-left:6%;background-position:60% center}
   .hero h1 {letter-spacing:-3px}
 }
-
+@media(max-width:650px) {
+  .download-center-grid {grid-template-columns:1fr}
+}
 @media(max-width:520px) {
   nav {padding:17px 6%}
   .logo {font-size:24px}
@@ -647,10 +448,7 @@ footer {
   .app-shot {padding:17px}
   .hero-buttons {flex-direction:column;align-items:flex-start}
   .footer-top {flex-direction:column}
-  .celebration-content {padding:30px 18px}
-  .celebration-content h2 {font-size:23px}
 }
-
 @media(prefers-reduced-motion:reduce) {
   *,*::before,*::after {
     scroll-behavior:auto!important;
@@ -663,129 +461,145 @@ footer {
 
 <body>
 
-<!-- NAVIGATION -->
-
 <nav>
-  <a href="#home" class="logo">ZAARA<span>.</span></a>
-
+  <a href="#home" class="logo">VIDLYRA<span>.</span></a>
   <button class="menu" onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
 
   <div class="navlinks" id="navlinks">
     <a href="#home" onclick="closeMenu()">Home</a>
+    <a href="#download" onclick="closeMenu()">Downloads</a>
     <a href="#features" onclick="closeMenu()">Features</a>
     <a href="#workouts" onclick="closeMenu()">Workouts</a>
     <a href="#screenshots" onclick="closeMenu()">App Preview</a>
-    <a href="#avatars" onclick="closeMenu()">Avatars</a>
     <a href="#about" onclick="closeMenu()">About</a>
-    <a href="#download" class="btn" onclick="closeMenu()">Download</a>
   </div>
 </nav>
 
-<!-- HERO -->
-
 <header class="hero" id="home">
   <div class="hero-content">
-
-    <div class="tag">POWER YOUR POTENTIAL</div>
-
-    <h1>EVOLVE<br><span>YOURSELF.</span></h1>
-
+    <div class="tag">AK APPLICATION ENGINE × VIDLYRA</div>
+    <h1>DOWNLOAD.<br><span>EXPERIENCE.</span></h1>
     <p>
-      Your body. Your journey. Your evolution.
-      Build strength, develop discipline and become
-      the best version of yourself with ZAARA.
+      Discover the apps built by Vidlyra.
+      Explore, download and experience your next digital journey.
     </p>
-
     <div class="hero-buttons">
-      <a href="#download" class="btn">START YOUR JOURNEY ↗</a>
-      <a href="#features" class="btn-outline">EXPLORE ZAARA</a>
+      <a href="#download" class="btn">EXPLORE DOWNLOADS ↗</a>
+      <a href="#about" class="btn-outline">ABOUT VIDLYRA</a>
     </div>
-
   </div>
 </header>
 
-<!-- STATS -->
-
 <div class="stats">
   <div class="stat">
-    <h2>01</h2>
-    <p>YOUR JOURNEY</p>
+    <h2>02</h2>
+    <p>AVAILABLE APPS</p>
   </div>
-
   <div class="stat">
     <h2>∞</h2>
-    <p>YOUR POTENTIAL</p>
+    <p>MORE TO COME</p>
   </div>
-
   <div class="stat">
     <h2>100%</h2>
-    <p>YOUR EVOLUTION</p>
+    <p>VIDLYRA EXPERIENCE</p>
   </div>
 </div>
 
-<!-- FEATURES -->
+<section id="download">
+  <div class="section-head reveal">
+    <div class="tag">OFFICIAL ANDROID DOWNLOADS</div>
+    <h2>VIDLYRA DOWNLOAD CENTER</h2>
+    <p>Choose your app and start exploring.</p>
+  </div>
+
+  <div class="download-center-grid">
+
+    <article class="download-card reveal">
+      <div class="app-mark">Z</div>
+      <div class="version-label">ANDROID BETA · VERSION 0.8.0</div>
+      <h3>ZAARA</h3>
+      <p>
+        Evolve Yourself. A futuristic fitness and wellness
+        experience built to help you develop strength,
+        discipline and healthy habits.
+      </p>
+      <div class="download-meta">
+        <span>ANDROID</span>
+        <span>VERSION 0.8.0 BETA</span>
+        <span>APK</span>
+      </div>
+      <a
+        href="https://github.com/Akshadow143/ZAARA/releases/download/v0.8.0-beta/ZAARA-v0.8.0-Beta.apk"
+        class="btn"
+        target="_blank"
+        rel="noopener noreferrer"
+      >DOWNLOAD ZAARA ↓</a>
+    </article>
+
+    <article class="download-card reveal">
+      <div class="app-mark">V</div>
+      <div class="version-label">ANDROID · VERSION 1.0.0</div>
+      <h3>VIDLYRA CHAT</h3>
+      <p>
+        Connect and chat with people through
+        the VIDLYRA CHAT Android application.
+      </p>
+      <div class="download-meta">
+        <span>ANDROID</span>
+        <span>VERSION 1.0.0</span>
+        <span>APK</span>
+      </div>
+      <a
+        href="https://github.com/Akshadow143/VIDLYRA-CHAT/releases/tag/v1.0.0"
+        class="btn"
+        target="_blank"
+        rel="noopener noreferrer"
+      >DOWNLOAD VIDLYRA CHAT ↓</a>
+    </article>
+
+  </div>
+
+  <p class="download-note">
+    VIDLYRA CHAT opens its official GitHub Release page.
+    Select the APK file under Assets to download it.
+    Install only APK files from official release pages.
+  </p>
+</section>
 
 <section id="features">
-
   <div class="section-head reveal">
-    <div class="tag">WHY ZAARA</div>
-    <h2>ENGINEER YOUR EVOLUTION</h2>
-    <p>Everything you need to build a stronger version of yourself.</p>
+    <div class="tag">OUR ECOSYSTEM</div>
+    <h2>BUILT TO MAKE AN IMPACT</h2>
+    <p>Explore digital experiences from the Vidlyra ecosystem.</p>
   </div>
 
   <div class="features">
-
     <div class="feature reveal">
       <div class="icon">⚡</div>
-      <h3>Smart Workouts</h3>
-      <p>Explore structured workouts and build your daily fitness routine.</p>
+      <h3>ZAARA Fitness</h3>
+      <p>A futuristic fitness and wellness application to support your daily evolution.</p>
     </div>
-
     <div class="feature reveal">
-      <div class="icon">🎯</div>
-      <h3>Goal Tracking</h3>
-      <p>Stay focused on your goals and measure your progress.</p>
+      <div class="icon">💬</div>
+      <h3>VIDLYRA CHAT</h3>
+      <p>A mobile chat application designed to connect people.</p>
     </div>
-
     <div class="feature reveal">
-      <div class="icon">🔥</div>
-      <h3>Daily Motivation</h3>
-      <p>Build consistency, discipline and a powerful mindset.</p>
+      <div class="icon">🚀</div>
+      <h3>More Projects</h3>
+      <p>More applications and digital experiences are on the way.</p>
     </div>
-
-    <div class="feature reveal">
-      <div class="icon">👤</div>
-      <h3>Avatar System</h3>
-      <p>Represent your fitness journey with your own avatar.</p>
-    </div>
-
-    <div class="feature reveal">
-      <div class="icon">📊</div>
-      <h3>Fitness Analytics</h3>
-      <p>Understand your workout history and track improvements.</p>
-    </div>
-
-    <div class="feature reveal">
-      <div class="icon">💧</div>
-      <h3>Healthy Habits</h3>
-      <p>Develop better daily habits through consistent actions.</p>
-    </div>
-
   </div>
 </section>
 
-<!-- WORKOUTS -->
-
 <section id="workouts">
-
   <div class="section-head reveal">
-    <div class="tag">TRAIN HARDER</div>
+    <div class="tag">ZAARA EXPERIENCE</div>
     <h2>CHOOSE YOUR TRAINING</h2>
     <p>Different goals. Different challenges. One evolution.</p>
   </div>
 
   <div class="workouts">
-
     <div class="workout reveal">
       <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800" alt="Strength training">
       <div class="workout-info">
@@ -793,7 +607,6 @@ footer {
         <p>Build power and endurance.</p>
       </div>
     </div>
-
     <div class="workout reveal">
       <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800" alt="Fitness training">
       <div class="workout-info">
@@ -801,7 +614,6 @@ footer {
         <p>Improve your overall performance.</p>
       </div>
     </div>
-
     <div class="workout reveal">
       <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800" alt="Yoga training">
       <div class="workout-info">
@@ -809,14 +621,10 @@ footer {
         <p>Move better. Feel stronger.</p>
       </div>
     </div>
-
   </div>
 </section>
 
-<!-- REAL ZAARA APP SCREENSHOTS -->
-
 <section id="screenshots">
-
   <div class="section-head reveal">
     <div class="tag">INSIDE ZAARA</div>
     <h2>EXPERIENCE THE EVOLUTION</h2>
@@ -824,14 +632,9 @@ footer {
   </div>
 
   <div class="app-gallery">
-
     <div class="app-shot reveal">
       <div class="phone-frame">
-        <img src="assets/screenshots/home.jpg"
-             alt="ZAARA Home Dashboard"
-             loading="lazy"
-             onclick="openViewer(this.src)"
-             onerror="imageError(this)">
+        <img src="assets/screenshots/home.jpg" alt="ZAARA Home Dashboard" loading="lazy" onclick="openViewer(this.src)" onerror="imageError(this)">
       </div>
       <h3>HOME DASHBOARD</h3>
       <p>Your fitness command center.</p>
@@ -839,11 +642,7 @@ footer {
 
     <div class="app-shot reveal">
       <div class="phone-frame">
-        <img src="assets/screenshots/rewards.jpg"
-             alt="ZAARA Rewards"
-             loading="lazy"
-             onclick="openViewer(this.src)"
-             onerror="imageError(this)">
+        <img src="assets/screenshots/rewards.jpg" alt="ZAARA Rewards" loading="lazy" onclick="openViewer(this.src)" onerror="imageError(this)">
       </div>
       <h3>REWARDS SYSTEM</h3>
       <p>Celebrate your consistency.</p>
@@ -851,11 +650,7 @@ footer {
 
     <div class="app-shot reveal">
       <div class="phone-frame">
-        <img src="assets/screenshots/workout.jpg"
-             alt="ZAARA Workout"
-             loading="lazy"
-             onclick="openViewer(this.src)"
-             onerror="imageError(this)">
+        <img src="assets/screenshots/workout.jpg" alt="ZAARA Workout" loading="lazy" onclick="openViewer(this.src)" onerror="imageError(this)">
       </div>
       <h3>WORKOUT EXPERIENCE</h3>
       <p>Train and improve every day.</p>
@@ -863,11 +658,7 @@ footer {
 
     <div class="app-shot reveal">
       <div class="phone-frame">
-        <img src="assets/screenshots/nutrition.jpg"
-             alt="ZAARA Nutrition"
-             loading="lazy"
-             onclick="openViewer(this.src)"
-             onerror="imageError(this)">
+        <img src="assets/screenshots/nutrition.jpg" alt="ZAARA Nutrition" loading="lazy" onclick="openViewer(this.src)" onerror="imageError(this)">
       </div>
       <h3>NUTRITION TRACKER</h3>
       <p>Build healthier daily habits.</p>
@@ -875,11 +666,7 @@ footer {
 
     <div class="app-shot reveal">
       <div class="phone-frame">
-        <img src="assets/screenshots/profile.jpg"
-             alt="ZAARA Profile"
-             loading="lazy"
-             onclick="openViewer(this.src)"
-             onerror="imageError(this)">
+        <img src="assets/screenshots/profile.jpg" alt="ZAARA Profile" loading="lazy" onclick="openViewer(this.src)" onerror="imageError(this)">
       </div>
       <h3>PROFILE & AVATAR</h3>
       <p>Your fitness identity.</p>
@@ -887,11 +674,7 @@ footer {
 
     <div class="app-shot reveal">
       <div class="phone-frame">
-        <img src="assets/screenshots/settings.jpg"
-             alt="ZAARA Settings"
-             loading="lazy"
-             onclick="openViewer(this.src)"
-             onerror="imageError(this)">
+        <img src="assets/screenshots/settings.jpg" alt="ZAARA Settings" loading="lazy" onclick="openViewer(this.src)" onerror="imageError(this)">
       </div>
       <h3>PERSONAL SETTINGS</h3>
       <p>Customize your experience.</p>
@@ -899,162 +682,47 @@ footer {
 
     <div class="app-shot reveal">
       <div class="phone-frame">
-        <img src="assets/screenshots/meals.jpg"
-             alt="ZAARA Meals"
-             loading="lazy"
-             onclick="openViewer(this.src)"
-             onerror="imageError(this)">
+        <img src="assets/screenshots/meals.jpg" alt="ZAARA Meals" loading="lazy" onclick="openViewer(this.src)" onerror="imageError(this)">
       </div>
       <h3>MEAL TRACKING</h3>
       <p>Support your fitness goals.</p>
     </div>
-
   </div>
 </section>
-
-<!-- IMAGE VIEWER -->
 
 <div class="image-viewer" id="imageViewer" onclick="closeViewer()">
   <button class="viewer-close" onclick="closeViewer()" aria-label="Close image">×</button>
   <img id="viewerImage" src="" alt="ZAARA screenshot preview">
 </div>
 
-<!-- AVATARS -->
-
-<section id="avatars">
-
-  <div class="section-head reveal">
-    <div class="tag">YOUR IDENTITY</div>
-    <h2>YOUR AVATAR. YOUR STORY.</h2>
-    <p>Your evolution is personal. Make it yours.</p>
-  </div>
-
-  <div class="avatars">
-
-    <div class="avatar reveal">
-      <div class="symbol">🥷</div>
-      <h3>THE WARRIOR</h3>
-      <p>Discipline. Strength. Determination.</p>
-    </div>
-
-    <div class="avatar reveal">
-      <div class="symbol">⚔️</div>
-      <h3>THE CHALLENGER</h3>
-      <p>Challenge your limits every day.</p>
-    </div>
-
-    <div class="avatar reveal">
-      <div class="symbol">👑</div>
-      <h3>THE LEGEND</h3>
-      <p>Become the strongest version of yourself.</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- ABOUT -->
-
 <section id="about">
-
-  <div class="download reveal">
+  <div class="mission reveal">
     <div class="tag">OUR MISSION</div>
-
-    <h2>EVOLUTION IS A CHOICE.</h2>
-
+    <h2>IDEAS INTO EXPERIENCES.</h2>
     <p>
-      ZAARA is a futuristic fitness and wellness platform
-      designed to inspire everyone to move forward.
-      Every workout is progress. Every day is an opportunity.
+      Vidlyra builds digital products and creative experiences.
+      Explore our applications and follow our journey as we grow.
     </p>
-
-    <a href="#download" class="btn">BECOME THE CHANGE ↗</a>
-  </div>
-
-</section>
-
-<!-- DOWNLOAD -->
-
-<section id="download">
-
-  <div class="download reveal">
-
-    <div class="tag">YOUR NEXT CHAPTER STARTS HERE</div>
-
-    <div class="version-label">ANDROID BETA · VERSION 0.8.0</div>
-
-    <h2>READY TO EVOLVE?</h2>
-
-    <p>
-      Take the first step. Build your routine.
-      Own your journey with ZAARA.
-    </p>
-
-    <a
-  href="https://github.com/Akshadow143/ZAARA/releases/download/v0.8.0-beta/ZAARA-v0.8.0-Beta.apk"
-  class="btn"
-  id="downloadBtn"
-  onclick="zaaraCelebration()"
->
-  DOWNLOAD ZAARA ❤️
-</a>
-
-   <p style="font-size:11px">
-  ZAARA-v0.8.0-Beta.apk · Android Beta
-</p>
-
+    <a href="#download" class="btn">EXPLORE OUR APPS ↗</a>
   </div>
 </section>
-
-<!-- CELEBRATION -->
-
-<div class="celebration" id="celebration">
-
-  <div class="celebration-content">
-
-    <div class="celebration-emojis">💕 ❤️ 🎉 👏</div>
-
-    <h2>WELCOME TO ZAARA!</h2>
-
-    <p>Your evolution starts now.</p>
-
-    <h2>🔥 EVOLVE YOURSELF 🔥</h2>
-
-    <p class="small">
-      ZAARA Android v0.8.0 Beta
-      <br>
-      Your download should begin shortly!
-    </p>
-
-    <button class="celebration-close"
-            onclick="closeCelebration()">
-      LET'S GO ❤️
-    </button>
-
-  </div>
-
-</div>
-
-<!-- FOOTER -->
 
 <footer>
-
   <div class="footer-top">
-
     <div>
-      <a href="#home" class="logo">ZAARA<span>.</span></a>
+      <a href="#home" class="logo">VIDLYRA<span>.</span></a>
       <p>
-        Evolve Yourself.<br>
+        Digital experiences. Creative technology.<br>
         Powered by AK Application Engine × Vidlyra.
       </p>
     </div>
 
     <div>
       <h3 style="margin-bottom:20px">EXPLORE</h3>
-
       <div class="footer-links">
         <a href="#home">Home</a>
+        <a href="#download">Downloads</a>
         <a href="#features">Features</a>
-        <a href="#workouts">Workouts</a>
         <a href="#screenshots">App Preview</a>
         <a href="#about">About</a>
       </div>
@@ -1062,28 +730,23 @@ footer {
 
     <div>
       <h3 style="margin-bottom:20px">CONNECT</h3>
-
       <div class="footer-links">
-        <a href="https://github.com/Akshadow143/ZAARA">GitHub</a>
-        <a href="https://www.instagram.com/vidlyra_official/">Instagram</a>
-        <a href="https://whatsapp.com/channel/0029Vb6ojYJKLaHkYRUGCM0Y">WhatsApp</a>
+        <a href="https://github.com/Akshadow143/ZAARA" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.instagram.com/vidlyra_official/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://whatsapp.com/channel/0029Vb6ojYJKLaHkYRUGCM0Y" target="_blank" rel="noopener">WhatsApp</a>
       </div>
     </div>
-
   </div>
 
   <div class="copyright">
-    © <span id="year"></span> ZAARA. All Rights Reserved.
+    © <span id="year"></span> VIDLYRA. All Rights Reserved.
     <br><br>
-    Version 0.8.0 Beta | Designed by Vidlyra
+    VIDLYRA Download Center | Powered by AK Application Engine
   </div>
-
 </footer>
 
 <script>
-
 /* MOBILE MENU */
-
 function toggleMenu() {
   document.getElementById('navlinks').classList.toggle('active');
 }
@@ -1093,31 +756,21 @@ function closeMenu() {
 }
 
 /* YEAR */
-
-document.getElementById('year').textContent =
-  new Date().getFullYear();
+document.getElementById('year').textContent = new Date().getFullYear();
 
 /* SCROLL REVEAL */
-
 const observer = new IntersectionObserver(entries => {
-
   entries.forEach(entry => {
-
-    if(entry.isIntersecting) {
+    if (entry.isIntersecting) {
       entry.target.classList.add('show');
       observer.unobserve(entry.target);
     }
-
   });
+}, {threshold:0.12});
 
-},{threshold:0.12});
-
-document.querySelectorAll('.reveal').forEach(el => {
-  observer.observe(el);
-});
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 /* IMAGE VIEWER */
-
 function openViewer(src) {
   document.getElementById('viewerImage').src = src;
   document.getElementById('imageViewer').classList.add('active');
@@ -1127,17 +780,7 @@ function closeViewer() {
   document.getElementById('imageViewer').classList.remove('active');
 }
 
-/* CLOSE VIEWER WITH ESCAPE */
-
-document.addEventListener('keydown', e => {
-  if(e.key === 'Escape') {
-    closeViewer();
-    closeCelebration();
-  }
-});
-
 /* IMAGE ERROR HANDLING */
-
 function imageError(img) {
   img.style.display = 'none';
 
@@ -1155,65 +798,10 @@ function imageError(img) {
   frame.appendChild(message);
 }
 
-/* ZAARA DOWNLOAD CELEBRATION */
-
-let celebrationTimer;
-
-function zaaraCelebration() {
-
-  const popup = document.getElementById('celebration');
-
-  popup.classList.add('active');
-
-  clearTimeout(celebrationTimer);
-
-  const emojis = [
-    '💕','❤️','💖','🎉','👏','✨','🔥','💗'
-  ];
-
-  for(let i = 0; i < 45; i++) {
-
-    const item = document.createElement('div');
-
-    item.className = 'floating-heart';
-
-    item.textContent =
-      emojis[Math.floor(Math.random() * emojis.length)];
-
-    item.style.left = Math.random() * 100 + 'vw';
-    item.style.top = '100vh';
-
-    item.style.fontSize =
-      (20 + Math.random() * 25) + 'px';
-
-    item.style.animationDelay =
-      (Math.random() * 1.2) + 's';
-
-    document.body.appendChild(item);
-
-    setTimeout(() => {
-      item.remove();
-    }, 4500);
-
-  }
-
-  celebrationTimer = setTimeout(() => {
-    popup.classList.remove('active');
-  }, 4500);
-
-}
-
-/* CLOSE CELEBRATION */
-
-function closeCelebration() {
-
-  document.getElementById('celebration')
-    .classList.remove('active');
-
-  clearTimeout(celebrationTimer);
-
-}
-
+/* ESCAPE KEY */
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape') closeViewer();
+});
 </script>
 
 </body>
